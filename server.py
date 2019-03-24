@@ -17,3 +17,13 @@ def change_blue():
 def change_green():
     set_color('g', 10)
     return 'verde'
+
+@app.route('/112233')
+def change_yellow():
+    set_color('y', 10)
+    return 'amarelo'
+
+@app.route('/321321')
+def change_pink():
+    set_color('p', 10)
+    return 'rosa'
