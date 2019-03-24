@@ -1,5 +1,6 @@
 from flask import Flask
 from blink import *
+from acquisition import camera
 
 app = Flask(__name__)
 
@@ -24,6 +25,6 @@ def change_yellow():
     return 'amarelo'
 
 @app.route('/321321')
-def change_pink():
-    set_color('p', 10)
-    return 'rosa'
+def change_orange():
+    set_color('o', 10)
+    return 'laranja'
