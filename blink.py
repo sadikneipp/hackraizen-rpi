@@ -10,12 +10,13 @@ c_to_rgb = {
 }
 
 def set_color(color, timeout=2):
+    set_brightness(0.1)
     code = c_to_rgb[color]
     for i in range(8):
         set_pixel(i, code[0], code[1], code[2])
     show()
     time.sleep(timeout)
-    clear()
+    set_brightness(0)
 
 if __name__ == '__main__':
     set_color('r')

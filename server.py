@@ -11,9 +11,9 @@ def change_red():
 @app.route('/666666')
 def change_blue():
     set_color('b', 10)
-    return 'vermelho'
+    return 'azul'
 
 @app.route('/000001')
 def change_green():
     set_color('g', 10)
-    return 'vermelho'
+    return 'verde'
